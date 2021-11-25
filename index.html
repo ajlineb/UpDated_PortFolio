@@ -16,8 +16,10 @@
     <link rel="stylesheet" href="Assets/CSS/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Play&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Play&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -42,22 +44,219 @@
       <div class="routes">
         <ul>
           <li class="works">
-            <img src="" alt="" />
-            <h3 class="routeLetters"></h3>
+            <a href="#works"
+              ><img
+                id="routeImage"
+                src="./Assets/Images/rocket.png"
+                alt="rocket"
+              />
+              <h3 class="routeLetters">WORKS</h3></a
+            >
           </li>
           <li class="resume">
-            <img src="" alt="" />
-            <h3 class="routeLetters"></h3>
+            <a
+              href="https://drive.google.com/file/d/19OdU9thk92oOp3BoYlO8DkLYWHR_B2xi/view?usp=sharing"
+              ><img
+                id="routeImage"
+                src="./Assets/Images/telescope.png"
+                alt="telescope"
+              />
+              <h3 class="routeLetters">RESUME</h3></a
+            >
           </li>
-          <li class="about"></li>
-          <li class="contact"></li>
+          <li class="about">
+            <a href="#aboutMe"
+              ><img
+                id="routeImage"
+                src="./Assets/Images/earth.png"
+                alt="Earth"
+              />
+              <h3 class="routeLetters">ABOUT ME</h3></a
+            >
+          </li>
+          <li class="contact">
+            <a href="#contact"
+              ><img id="routeImage" src="./Assets/Images/ufo.png" alt="ufo" />
+              <h3 class="routeLetters">CONTACT</h3></a
+            >
+          </li>
         </ul>
       </div>
     </header>
 
-    <main></main>
+    <main>
+      <div class="container-fluid">
+        <div class="row section">
+          <div class="col-sm-5">
+            <div class="mainImages">
+              <img src="./Assets/Images/galaxy.png" alt="galaxy" />
+            </div>
+          </div>
+          <div class="col-sm-5">
+            <div class="aboutMeSection">
+              <a name="aboutMe"></a>
+              <div class="title">About Me</div>
+              <p>
+                Hello! I am from Bear Creek North Carolina. I have been working
+                in retail for four years now at Wal-Mart since I graduated from
+                North Carolina A&T State University. I have a degree in
+                Biomedical engineering and have extensive experience with
+                bio-imaging devices such as Ultrasound, MRI, and CT scanning. I
+                enjoy using software to look at the images and explain what is
+                occuring in them.
+              </p>
+              <br />
+              <p>
+                In my off time I enjoy creating 3D models to use in virtual
+                reality environments, and learning more about computers and
+                their hardware. I have even gone so far as to build my own
+                custom PC that I use to do a lot of my work with currently but
+                to also play a lot of video games.
+              </p>
+              <br />
+              <p>
+                As far as web-devolopment, I have thoroughly enjoyed working
+                with vanilla JavaScript but know how to use jQuery and pulling
+                information from 3rd party websites to make useful webpages that
+                solve real world issues. Developing highly responsive webpages
+                with javascript that are both mobile friendly and accessable for
+                all types of users. Below are some of the webpages I have worked
+                on my own and the project with a team!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row section">
+          <div class="col-sm-5">
+            <div class="mainImages">
+              <img src="./Assets/Images/rocket_Work.png" alt="rocket" />
+            </div>
+          </div>
+          <div class="col-sm-5 columnPadding aboutMeSection">
+            <a name="works"></a>
+            <div class="title">Works</div>
+            <div class="row">
+              <div class="col-sm-6 showcase">
+                <a href="https://jparris3213.github.io/UNC_Project_1_Group/"
+                  ><img
+                    src="./Assets/Images/AstroProject.png"
+                    alt="space Website"
+                    id="important"
+                  />
+                  <p class="showCaseTitles">Astromical Guidance (Team)</p>
+                </a>
+              </div>
+              <div class="col-sm-6 showcase">
+                <a href="https://philip-project2.herokuapp.com/"
+                  ><img
+                    src="./Assets/Images/ForumProject.png"
+                    alt="Forum Website"
+                    id="important"
+                  />
+                  <p class="showCaseTitles">Riposte Forum (Team)</p></a
+                >
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 showcase">
+                <a
+                  href="https://github.com/ajlineb/Object-Relational-Mapping-E-Commerce-Backend"
+                  ><img
+                    src="https://raw.githubusercontent.com/ajlineb/Object-Relational-Mapping-E-Commerce-Backend/main/images/E_comm.PNG"
+                    alt="E-Commerce Backend"
+                    id="important"
+                  />
+                  <p class="showCaseTitles">E-Commerce Backend (DataBase)</p>
+                </a>
+              </div>
+              <div class="col-sm-6 showcase">
+                <a href="https://github.com/ajlineb/SQL-Employee-Tracker"
+                  ><img
+                    src="https://raw.githubusercontent.com/ajlineb/SQL-Employee-Tracker/main/images/employeeDatabase.png"
+                    alt="Employee Tracker Database"
+                    id="important"
+                  />
+                  <p class="showCaseTitles">Employee Tracker (DataBase)</p></a
+                >
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 showcase">
+                <a href="https://github.com/ajlineb/Team-Profile-Generator"
+                  ><img
+                    src="https://raw.githubusercontent.com/ajlineb/Team-Profile-Generator/main/dist/images/teamProfileManager.png"
+                    alt="Team Generator"
+                    id="important"
+                  />
+                  <p class="showCaseTitles">Team Profile (Generator)</p>
+                </a>
+              </div>
+              <div class="col-sm-6 showcase">
+                <a href="https://ajlineb.github.io/Weather_Dashboard/"
+                  ><img
+                    src="https://raw.githubusercontent.com/ajlineb/Weather_Dashboard/main/Assets/Images/Weather_Dashboard.png"
+                    alt="Weather Dashboard"
+                    id="important"
+                  />
+                  <p class="showCaseTitles">Weather Dashboard (APIs)</p></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row section">
+          <div class="col-sm-5">
+            <div class="mainImages">
+              <img src="./Assets/Images/technology.png" alt="radar dish" />
+            </div>
+          </div>
+          <div class="col-sm-5">
+            <div class="aboutMeSection">
+              <a name="contact"></a>
+              <div class="title">Contact Information</div>
+              <p>Phone: <a href="tel:+19842650534">984.265.0534</a></p>
+              <p>
+                Email:
+                <a href="mailto:anthonylinebaugh95@gmail.com"
+                  >anthonylinebaugh95@gmail.com</a
+                >
+              </p>
+              <p>
+                GitHub:
+                <a
+                  href="https://github.com/ajlineb"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+              </p>
+              <p>
+                Linkdin:
+                <a
+                  href="https://www.linkedin.com/in/anthjlin/"
+                  target="_blank"
+                  rel="noopener"
+                  >anthjlin</a
+                >
+              </p>
+              <p class="finalMessage">
+                Please don't hesitate to get in touch with me!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-    <footer></footer>
+    <footer>
+      <footer>
+        <h4 class="lastThought">Made with ❤️!</h4>
+      </footer>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

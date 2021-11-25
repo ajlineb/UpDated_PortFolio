@@ -1,6 +1,18 @@
+:root {
+  --fontStandard: "Play", sans-serif;
+  --fontBold: "Fjalla One", sans-serif;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+  color: var(--outline-color);
+}
+
 body {
   background-color: rgb(61, 55, 55);
-  height: 100%;
   border: 0.3rem solid rgb(8, 3, 6);
   box-shadow: 0px 1px 100px black inset;
   background: url(../Images/nightSky.jpg) no-repeat center center fixed;
@@ -51,6 +63,7 @@ header {
 .titles {
   color: white;
   font-size: 1.9rem;
+  animation: color-change 4s infinite;
 }
 #backStrip {
   width: 430px;
@@ -83,4 +96,147 @@ header {
   border-left: 20px solid rgb(162, 45, 230);
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
+}
+
+.routes {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+ul {
+  display: flex;
+}
+
+.routes li {
+  display: inline-block;
+  padding: 3rem 3rem 0rem 3rem;
+  position: relative;
+  flex-shrink: 1;
+}
+
+#routeImage {
+  height: 4rem;
+  width: 4rem;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, 0);
+  background-color: rgba(128, 128, 128, 0.459);
+  border-radius: 0.5rem;
+  box-shadow: 1px 0px 1px black;
+}
+
+.works {
+  position: relative;
+}
+
+.routeLetters {
+  text-align: center;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  padding-top: 2rem;
+  text-shadow: 1px 1px 5px rgb(0, 0, 0);
+}
+
+.section {
+  padding: 2rem 0rem 2rem 0rem;
+  background: url(../Images/gridPaper.png) no-repeat center center;
+  /* background-color: rgb(39, 35, 35); */
+  background-size: 80% 100%; /* This both sets the width and height to fit within a div */
+}
+
+.mainImages {
+  text-align: center;
+  margin: 1rem 0rem 1rem 11rem;
+}
+
+.mainImages img {
+  padding-top: 10%;
+}
+
+.title {
+  text-align: center;
+  font-family: var(--fontStandard);
+  font-size: 2rem;
+  padding: 1rem 0rem 1rem 0rem;
+}
+
+.aboutMeSection {
+  text-align: left;
+  font-family: var(--fontStandard);
+  text-shadow: 1px 0px 21px black;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  margin: 1rem 0rem 1rem 0rem;
+  background-color: rgba(187, 185, 185, 0.623);
+  box-shadow: 0px 1px 10px black inset;
+  border-radius: 3rem;
+  padding-bottom: 1rem;
+}
+
+.columnPadding {
+  padding-bottom: 2rem;
+}
+
+.aboutMeSection p {
+  padding-left: 1rem;
+  font-weight: 900;
+}
+
+.showcase {
+  /* height: 10rem;
+  width: 10rem; */
+  height: 15rem;
+  padding: 1.2rem;
+}
+
+#important {
+  height: 100%;
+  width: 100%;
+  box-shadow: 0px 1px 9px black;
+  border-radius: 1rem;
+  border: 2px solid rgb(162, 45, 230);
+  transform: skew(-5deg, 5deg);
+}
+
+.showcase:hover {
+  transform: scale(1.2);
+  z-index: 2;
+  text-shadow: 0px 1px 10px yellow;
+}
+
+.showCaseTitles {
+  font-family: var(--fontBold);
+  font-weight: 900;
+  transform: skew(-5deg, 5deg);
+  padding: 0.3rem;
+}
+
+.finalMessage {
+  text-align: center;
+  font-weight: 900;
+  transform: skew(-10deg);
+}
+
+.lastThought {
+  text-align: center;
+  color: white;
+  font-family: var(--fontStandard);
+}
+
+@keyframes color-change {
+  0% {
+    color: rgb(255, 255, 255);
+  }
+  50% {
+    color: rgb(0, 195, 255);
+  }
+  100% {
+    color: rgb(255, 255, 255);
+  }
 }
