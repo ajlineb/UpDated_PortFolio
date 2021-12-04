@@ -157,6 +157,8 @@ ul {
 
 .mainImages img {
   padding-top: 10%;
+  max-width: 100%;
+  height: auto;
 }
 
 .title {
@@ -177,6 +179,7 @@ ul {
   box-shadow: 0px 1px 10px black inset;
   border-radius: 3rem;
   padding-bottom: 1rem;
+  max-width: 100%;
 }
 
 .columnPadding {
@@ -227,6 +230,13 @@ ul {
   text-align: center;
   color: white;
   font-family: var(--fontStandard);
+}
+
+@media screen and (max-width: 540px) {
+  .mainImages {
+    text-align: center;
+    margin: 1rem 0rem 1rem 0rem;
+  }
 }
 
 @keyframes color-change {
